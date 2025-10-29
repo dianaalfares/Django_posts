@@ -24,18 +24,12 @@ from  rest_framework import status
 logger = logging.getLogger(__name__)
 
 
-
-
 def get_tokens_for_user(user):
    refresh=RefreshToken.for_user(user) 
    return {
       'refresh':str(refresh),
       'access':str(refresh.access_token)
      }
-
-
-
-
 
 
 @api_view(['POST'])
@@ -48,32 +42,29 @@ def register(request):
      school=request.data.get('school')
      first_name=request.data.get('first_name')
      last_name=request.data.get('last_name')
-   #   user_obj=User.objects.get(user_name=user_name)
      if len(passw)<8 :
         logger.warning('you should add password with 8 character')
         raise ValueError("you must add a password with 8 character or more..")
-   #   if  not  int (age):
-         #  logger.warning('you should add numeric variable')
-         #  raise ValueError("you should add numeric variable")
+     if type(age) is not int:
+          logger.warning('you should add numeric variable')
+          raise ValueError("you should add numeric variable")
      if  int (age)  < 9  or  int (age) > 90 :
           logger.warning('your age must be betwen 9 and 90')
           raise ValueError("your age must be betwen 9 and 90")
-   #   if  user_obj is  None:
-         #  logger.error('this email is already exist')
-         #  raise ValueError("this email is already exist")
+     if  User.objects.filter(username=user_name).exists():
+          logger.error('this email is already exist')
+          raise ValueError("this email is already exist")
      user=User.objects.create_user(username=user_name,password=passw,first_name=first_name,last_name=last_name)
      token=get_tokens_for_user(user)
      us=profile(user=user,age=age,school=school,token=token['access']
      )
      us.save()
-     logger.info("the user create seccessfully")
+     logger.info("the user create successfully")
      return Response({"result":"ok","token":us.token})
    except Exception as e:
-      # print(e)
-      # raise ValueError("Error : {e}")
+      print(e)
       logger.error(f'something happend {e}')
       raise ValueError(f"Error : {e}")
-      # return Response({"result" : "error"}) 
    
 
 
