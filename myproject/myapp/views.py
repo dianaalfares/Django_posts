@@ -8,6 +8,8 @@ from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import AccessToken
 from .models import *
 from .serializers import * 
+import logging
+
 # 
 # from rest_framework.exceptions import ValidationError
 # from rest_framework.decorators import permission_classes
@@ -18,6 +20,11 @@ from django.utils import timezone
 from  rest_framework import status
 
 # Create your views here.
+
+logger = logging.getLogger(__name__)
+
+
+
 
 def get_tokens_for_user(user):
    refresh=RefreshToken.for_user(user) 
@@ -34,19 +41,39 @@ def get_tokens_for_user(user):
 @api_view(['POST'])
 def register(request):
    try:
+     logger.info("start order to register")
      passw=request.data.get('password')
      age=request.data.get('age')
      user_name=request.data.get('user_name')
      school=request.data.get('school')
-     user=User.objects.create_user(username=user_name,password=passw)
+     first_name=request.data.get('first_name')
+     last_name=request.data.get('last_name')
+   #   user_obj=User.objects.get(user_name=user_name)
+     if len(passw)<8 :
+        logger.warning('you should add password with 8 character')
+        raise ValueError("you must add a password with 8 character or more..")
+   #   if  not  int (age):
+         #  logger.warning('you should add numeric variable')
+         #  raise ValueError("you should add numeric variable")
+     if  int (age)  < 9  or  int (age) > 90 :
+          logger.warning('your age must be betwen 9 and 90')
+          raise ValueError("your age must be betwen 9 and 90")
+   #   if  user_obj is  None:
+         #  logger.error('this email is already exist')
+         #  raise ValueError("this email is already exist")
+     user=User.objects.create_user(username=user_name,password=passw,first_name=first_name,last_name=last_name)
      token=get_tokens_for_user(user)
      us=profile(user=user,age=age,school=school,token=token['access']
      )
      us.save()
+     logger.info("the user create seccessfully")
      return Response({"result":"ok","token":us.token})
    except Exception as e:
-      print(e)
-      return Response({"result" : "error"}) 
+      # print(e)
+      # raise ValueError("Error : {e}")
+      logger.error(f'something happend {e}')
+      raise ValueError(f"Error : {e}")
+      # return Response({"result" : "error"}) 
    
 
 
