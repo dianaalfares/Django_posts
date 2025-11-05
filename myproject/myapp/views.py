@@ -148,47 +148,59 @@ def create_post(request):
 
 
 
-# @api_view(['POST'])
-# def update_post(request):
-   # try:
-   #  logger.info("start order to update post")
-   #  id=request.data.get('id')
-   #  token=request.data.get('token')
-   #  text=request.data.get('text')
-   #  image=request.FILES.get('image')
-   #  if  not profile.objects.get(token=token):
-      #  logger.error("token is not correct")
-      #  raise ValueError("token is not correct") 
-   #  prof=profile.objects.get(token =token)
-   #  if  not post.objects.get(u=prof):
-      #  logger.error("post does not belong to this user")
-      #  raise ValueError("post does not belong to this user") 
-   #  if  not post.objects.get(id=id):
-      #  logger.error("id does not correct")
-      #  raise ValueError("id does not correct") 
-   #  post_for_user=post.objects.get(id=id)
-   #  post_for_user.text=text
-   #  post_for_user.image=image
-   #  post_for_user.save()
-   #  logger.info("every thing ok")
-   #  return Response({"result":"ok"})
-   # except Exception as e:
-   #   raise ValueError(f"Error :{e}")       
+@api_view(['PUT'])
+def update_post(request):
+   try:
+    logger.info("start order to update post")
+    id=request.data.get('id')
+    token=request.data.get('token')
+    text=request.data.get('text')
+    image=request.FILES.get('image')
+    if  not profile.objects.get(token=token):
+       logger.error("token is not correct")
+       raise ValueError("token is not correct") 
+    if  not post.objects.get(id=id):
+       logger.error("id does not correct")
+       raise ValueError("id does not correct") 
+    prof=profile.objects.get(token =token)
+    if  not post.objects.filter(u=prof,id=id):
+       logger.error("post does not belong to this user")
+       raise ValueError("post does not belong to this user") 
+    post_for_user=post.objects.get(id=id)
+    post_for_user.text=text
+    post_for_user.image=image
+    post_for_user.save()
+    logger.info("every thing ok")
+    return Response({"result":"ok"})
+   except Exception as e:
+     raise ValueError(f"Error :{e}")       
        
    
 
 
 
 
-@api_view(['POST'])
+@api_view(['DELETE'])
 def delet_post(request):
    try:
+    logger.info("start order to delete post")
     id=request.data.get('id')
+    token=request.data.get('token')
+    if  not profile.objects.get(token=token):
+       logger.error("token is not correct")
+       raise ValueError("token is not correct") 
+    if  not post.objects.get(id=id):
+       logger.error("id does not correct")
+       raise ValueError("id does not correct") 
+    prof=profile.objects.get(token =token)
+    if  not post.objects.filter(u=prof,id=id):
+       logger.error("post does not belong to this user")
+       raise ValueError("post does not belong to this user") 
+
     post_for_user=post.objects.get(id=id)
     post_for_user.delete()
     
- 
+    logger.info("every thing ok")
     return Response({"result":"ok"})
    except Exception as e:
-      print(e)
-      return Response({"result" : "error"})     
+     raise ValueError(f"Error :{e}")    

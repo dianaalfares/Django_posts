@@ -7,7 +7,7 @@ class profile(models.Model):
   school=models.CharField(max_length=150, null=True)
   age=models.IntegerField(default=1)
   image=models.ImageField(upload_to='user/')
-  token= models.CharField(null=True)
+  token= models.CharField(null=True,unique=True)
 #   def __str__ (self):
     #  return  f'{self.user.first_name}{self.user.last_name} profile'
   

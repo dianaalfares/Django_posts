@@ -11,7 +11,7 @@ urlpatterns = [
      path('getprof/',views.get_profile),
      path('read_posts/',views.read_posts),
     path('create_post/',views.create_post),
-    #  path('update_post/',views.update_post),
+     path('update_post/',views.update_post),
      path('delet_post/',views.delet_post),
 ]
 

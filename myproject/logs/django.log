@@ -1,0 +1,122 @@
+2025-11-04 13:58:41,933 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-11-04 13:59:08,846 [INFO] django.utils.autoreload: C:\Users\DELL\Desktop\Posts\myproject\myapp\models.py changed, reloading.
+2025-11-04 13:59:10,161 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-11-04 13:59:55,687 [WARNING] django.request: Not Found: /favicon.ico
+2025-11-04 14:00:31,538 [INFO] django.utils.autoreload: C:\Users\DELL\Desktop\Posts\myproject\myapp\urls.py changed, reloading.
+2025-11-04 14:00:33,072 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-11-04 14:01:21,020 [INFO] django.utils.autoreload: C:\Users\DELL\Desktop\Posts\myproject\myapp\views.py changed, reloading.
+2025-11-04 14:01:22,324 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-11-04 14:01:25,207 [INFO] myapp.views: start order to update post
+2025-11-04 14:01:25,225 [ERROR] myapp.exceptions: ValueError Caught: Error :get() returned more than one post -- it returned 5! in view update_post
+2025-11-04 14:01:25,229 [WARNING] django.request: Bad Request: /api/update_post/
+2025-11-04 14:02:50,088 [INFO] django.utils.autoreload: C:\Users\DELL\Desktop\Posts\myproject\myapp\views.py changed, reloading.
+2025-11-04 14:02:51,263 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-11-04 14:03:12,612 [INFO] myapp.views: start order to update post
+2025-11-04 14:03:12,646 [INFO] myapp.views: every thing ok
+2025-11-04 14:04:06,727 [INFO] django.utils.autoreload: C:\Users\DELL\Desktop\Posts\myproject\myapp\views.py changed, reloading.
+2025-11-04 14:04:07,984 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-11-04 14:07:50,803 [INFO] django.utils.autoreload: C:\Users\DELL\Desktop\Posts\myproject\myapp\views.py changed, reloading.
+2025-11-04 14:07:53,227 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-11-04 14:08:20,525 [INFO] django.utils.autoreload: C:\Users\DELL\Desktop\Posts\myproject\myapp\views.py changed, reloading.
+2025-11-04 14:08:22,130 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-11-04 14:08:25,740 [WARNING] django.request: Method Not Allowed: /api/update_post/
+2025-11-04 14:08:33,996 [INFO] myapp.views: start order to update post
+2025-11-04 14:08:34,019 [INFO] myapp.views: every thing ok
+2025-11-04 14:11:31,372 [INFO] myapp.views: start order to update post
+2025-11-04 14:11:31,376 [ERROR] myapp.exceptions: ValueError Caught: Error :profile matching query does not exist. in view update_post
+2025-11-04 14:11:31,377 [WARNING] django.request: Bad Request: /api/update_post/
+2025-11-04 14:14:23,005 [DEBUG] PIL.Image: Importing AvifImagePlugin
+2025-11-04 14:14:23,018 [DEBUG] PIL.Image: Importing BlpImagePlugin
+2025-11-04 14:14:23,022 [DEBUG] PIL.Image: Importing BmpImagePlugin
+2025-11-04 14:14:23,022 [DEBUG] PIL.Image: Importing BufrStubImagePlugin
+2025-11-04 14:14:23,024 [DEBUG] PIL.Image: Importing CurImagePlugin
+2025-11-04 14:14:23,027 [DEBUG] PIL.Image: Importing DcxImagePlugin
+2025-11-04 14:14:23,032 [DEBUG] PIL.Image: Importing DdsImagePlugin
+2025-11-04 14:14:23,039 [DEBUG] PIL.Image: Importing EpsImagePlugin
+2025-11-04 14:14:23,043 [DEBUG] PIL.Image: Importing FitsImagePlugin
+2025-11-04 14:14:23,045 [DEBUG] PIL.Image: Importing FliImagePlugin
+2025-11-04 14:14:23,048 [DEBUG] PIL.Image: Importing FpxImagePlugin
+2025-11-04 14:14:23,052 [DEBUG] PIL.Image: Image: failed to import FpxImagePlugin: No module named 'olefile'
+2025-11-04 14:14:23,052 [DEBUG] PIL.Image: Importing FtexImagePlugin
+2025-11-04 14:14:23,054 [DEBUG] PIL.Image: Importing GbrImagePlugin
+2025-11-04 14:14:23,057 [DEBUG] PIL.Image: Importing GifImagePlugin
+2025-11-04 14:14:23,058 [DEBUG] PIL.Image: Importing GribStubImagePlugin
+2025-11-04 14:14:23,060 [DEBUG] PIL.Image: Importing Hdf5StubImagePlugin
+2025-11-04 14:14:23,063 [DEBUG] PIL.Image: Importing IcnsImagePlugin
+2025-11-04 14:14:23,070 [DEBUG] PIL.Image: Importing IcoImagePlugin
+2025-11-04 14:14:23,074 [DEBUG] PIL.Image: Importing ImImagePlugin
+2025-11-04 14:14:23,076 [DEBUG] PIL.Image: Importing ImtImagePlugin
+2025-11-04 14:14:23,080 [DEBUG] PIL.Image: Importing IptcImagePlugin
+2025-11-04 14:14:23,082 [DEBUG] PIL.Image: Importing JpegImagePlugin
+2025-11-04 14:14:23,082 [DEBUG] PIL.Image: Importing Jpeg2KImagePlugin
+2025-11-04 14:14:23,083 [DEBUG] PIL.Image: Importing McIdasImagePlugin
+2025-11-04 14:14:23,085 [DEBUG] PIL.Image: Importing MicImagePlugin
+2025-11-04 14:14:23,089 [DEBUG] PIL.Image: Image: failed to import MicImagePlugin: No module named 'olefile'
+2025-11-04 14:14:23,089 [DEBUG] PIL.Image: Importing MpegImagePlugin
+2025-11-04 14:14:23,091 [DEBUG] PIL.Image: Importing MpoImagePlugin
+2025-11-04 14:14:23,098 [DEBUG] PIL.Image: Importing MspImagePlugin
+2025-11-04 14:14:23,100 [DEBUG] PIL.Image: Importing PalmImagePlugin
+2025-11-04 14:14:23,105 [DEBUG] PIL.Image: Importing PcdImagePlugin
+2025-11-04 14:14:23,107 [DEBUG] PIL.Image: Importing PcxImagePlugin
+2025-11-04 14:14:23,107 [DEBUG] PIL.Image: Importing PdfImagePlugin
+2025-11-04 14:14:23,120 [DEBUG] PIL.Image: Importing PixarImagePlugin
+2025-11-04 14:14:23,123 [DEBUG] PIL.Image: Importing PngImagePlugin
+2025-11-04 14:14:23,123 [DEBUG] PIL.Image: Importing PpmImagePlugin
+2025-11-04 14:14:23,124 [DEBUG] PIL.Image: Importing PsdImagePlugin
+2025-11-04 14:14:23,126 [DEBUG] PIL.Image: Importing QoiImagePlugin
+2025-11-04 14:14:23,129 [DEBUG] PIL.Image: Importing SgiImagePlugin
+2025-11-04 14:14:23,132 [DEBUG] PIL.Image: Importing SpiderImagePlugin
+2025-11-04 14:14:23,134 [DEBUG] PIL.Image: Importing SunImagePlugin
+2025-11-04 14:14:23,136 [DEBUG] PIL.Image: Importing TgaImagePlugin
+2025-11-04 14:14:23,139 [DEBUG] PIL.Image: Importing TiffImagePlugin
+2025-11-04 14:14:23,139 [DEBUG] PIL.Image: Importing WebPImagePlugin
+2025-11-04 14:14:23,147 [DEBUG] PIL.Image: Importing WmfImagePlugin
+2025-11-04 14:14:23,150 [DEBUG] PIL.Image: Importing XbmImagePlugin
+2025-11-04 14:14:23,154 [DEBUG] PIL.Image: Importing XpmImagePlugin
+2025-11-04 14:14:23,155 [DEBUG] PIL.Image: Importing XVThumbImagePlugin
+2025-11-04 14:14:46,574 [INFO] myapp.views: start order to update post
+2025-11-04 14:14:46,582 [ERROR] myapp.views: post does not belong to this user
+2025-11-04 14:14:46,583 [ERROR] myapp.exceptions: ValueError Caught: Error :post does not belong to this user in view update_post
+2025-11-04 14:14:46,584 [WARNING] django.request: Bad Request: /api/update_post/
+2025-11-04 14:25:24,453 [INFO] django.utils.autoreload: C:\Users\DELL\Desktop\Posts\myproject\myapp\views.py changed, reloading.
+2025-11-04 14:25:25,515 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-11-04 14:25:36,990 [INFO] myapp.views: start order to update post
+2025-11-04 14:25:37,003 [ERROR] myapp.exceptions: ValueError Caught: Error :post matching query does not exist. in view update_post
+2025-11-04 14:25:37,006 [WARNING] django.request: Bad Request: /api/update_post/
+2025-11-04 14:25:52,722 [INFO] myapp.views: start order to update post
+2025-11-04 14:25:52,748 [INFO] myapp.views: every thing ok
+2025-11-04 14:26:03,528 [INFO] myapp.views: start order to update post
+2025-11-04 14:26:03,536 [ERROR] myapp.exceptions: ValueError Caught: Error :post matching query does not exist. in view update_post
+2025-11-04 14:26:03,537 [WARNING] django.request: Bad Request: /api/update_post/
+2025-11-04 14:26:19,230 [INFO] django.utils.autoreload: C:\Users\DELL\Desktop\Posts\myproject\myapp\views.py changed, reloading.
+2025-11-04 14:26:20,323 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-11-04 14:26:25,431 [INFO] myapp.views: start order to update post
+2025-11-04 14:26:25,440 [ERROR] myapp.views: post does not belong to this user
+2025-11-04 14:26:25,441 [ERROR] myapp.exceptions: ValueError Caught: Error :post does not belong to this user in view update_post
+2025-11-04 14:26:25,444 [WARNING] django.request: Bad Request: /api/update_post/
+2025-11-04 14:26:36,355 [INFO] myapp.views: start order to update post
+2025-11-04 14:26:36,377 [INFO] myapp.views: every thing ok
+2025-11-04 14:26:48,053 [INFO] myapp.views: start order to update post
+2025-11-04 14:26:48,061 [ERROR] myapp.views: post does not belong to this user
+2025-11-04 14:26:48,061 [ERROR] myapp.exceptions: ValueError Caught: Error :post does not belong to this user in view update_post
+2025-11-04 14:26:48,063 [WARNING] django.request: Bad Request: /api/update_post/
+2025-11-04 14:27:21,861 [INFO] django.utils.autoreload: C:\Users\DELL\Desktop\Posts\myproject\myapp\views.py changed, reloading.
+2025-11-04 14:27:23,126 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-11-04 14:28:50,329 [INFO] django.utils.autoreload: C:\Users\DELL\Desktop\Posts\myproject\myapp\views.py changed, reloading.
+2025-11-04 14:28:51,429 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-11-04 14:30:42,084 [INFO] django.utils.autoreload: C:\Users\DELL\Desktop\Posts\myproject\myapp\views.py changed, reloading.
+2025-11-04 14:30:43,609 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-11-04 14:31:18,770 [INFO] django.utils.autoreload: C:\Users\DELL\Desktop\Posts\myproject\myapp\views.py changed, reloading.
+2025-11-04 14:31:20,104 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-11-04 14:32:03,753 [INFO] myapp.views: start order to delete post
+2025-11-04 14:32:03,759 [ERROR] myapp.exceptions: ValueError Caught: Error :profile matching query does not exist. in view delet_post
+2025-11-04 14:32:03,761 [WARNING] django.request: Bad Request: /api/delet_post/
+2025-11-04 14:32:14,473 [INFO] myapp.views: start order to delete post
+2025-11-04 14:32:14,479 [ERROR] myapp.exceptions: ValueError Caught: Error :profile matching query does not exist. in view delet_post
+2025-11-04 14:32:14,480 [WARNING] django.request: Bad Request: /api/delet_post/
+2025-11-04 14:32:41,863 [INFO] myapp.views: start order to delete post
+2025-11-04 14:32:41,868 [ERROR] myapp.exceptions: ValueError Caught: Error :post matching query does not exist. in view delet_post
+2025-11-04 14:32:41,869 [WARNING] django.request: Bad Request: /api/delet_post/
+2025-11-04 14:32:54,376 [INFO] myapp.views: start order to delete post
+2025-11-04 14:32:54,394 [INFO] myapp.views: every thing ok
+2025-11-05 17:50:03,262 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
