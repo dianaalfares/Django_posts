@@ -122,57 +122,6 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-
-
-
-# LOGGING = {
-    # "version": 1,
-    # "disable_existing_loggers": False,
-    # "handlers": {
-        # 'console': {
-            # 'class': 'logging.StreamHandler',
-        # },
-        # "file": {
-            # "class": "logging.FileHandler",
-            # "filename": str(BASE_DIR / "logs" / "django.log"),
-
-# 
-            # "level":"DEBUG",
-            # "formatter":"simple",
-        # },
-    # },
-    # "loggers": {
-        # "": {
-            # "handlers": ["file"],
-            # "level": "DEBUG",
-        # },
-        # "formatters" :
-        # {
-            # "simple":
-            # {
-                # "format":"{asctime}:{levelname} {message}",
-                # "style": "{",
-            # }
-        # },
-        # "verbose":
-        # {
-            # "format":""
-        # },
-
-        # 'myapp': {  
-            # 'handlers': ['console', 'file'],
-            # 'level': 'INFO',
-            # 'propagate': True,
-        # },
-    # },
-# }
-
-
-
-
-
-
-
 LOGGING = {
     "version": 1,
     "disable_existing_loggers": False,

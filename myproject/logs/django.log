@@ -120,3 +120,7 @@
 2025-11-04 14:32:54,376 [INFO] myapp.views: start order to delete post
 2025-11-04 14:32:54,394 [INFO] myapp.views: every thing ok
 2025-11-05 17:50:03,262 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-11-05 18:22:32,382 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-11-06 01:19:10,923 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-11-06 01:38:01,671 [INFO] django.utils.autoreload: C:\Users\DELL\Desktop\Posts\myproject\myproject\settings.py changed, reloading.
+2025-11-06 01:38:09,521 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
